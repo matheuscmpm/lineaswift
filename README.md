@@ -12,10 +12,10 @@ First steps:
 2) Drag DTDevices.h and libdtdev.a to your project
 
 3) If you are using the Xcode5 SDK package from Linea, you need to open DTDevices.h and paste these two following lines on top of it. Ignore this step if you are using Xcode6 SDK package.
-
- #import <UIKit/UIKit.h>
-
- #import <Foundation/Foundation.h>
+<pre><code>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+</code></pre>
 
 4) Go to your project settings -> General tab -> Scroll to Linked Frameworks and Libraries and click to add another one. Select ExternalAccessory.framework and add it to your project.
 
@@ -24,32 +24,30 @@ First steps:
 6) Go to your project settings -> Info Tab -> Look for “Supported external accessory protocols” key, if does not exist, right click in the list and click “Add row”, start typing Supported… and select Supported external accessory protocols” option. 
 
 At item 0 add this value: com.datecs.linea.pro.msr
-
 Add another line with this value: com.datecs.linea.pro.bar
 
 7) Try to compile (Command B), if you got a briging header error saying that DTDevices.h does not exist, you may need to edit your library/framework search paths in your build settings.
 
 8) Modify your ViewController Class and add the DTDeviceDelegate at your class header.
-
+<pre><code>
 class ViewController: UIViewController, DTDeviceDelegate {
 
 }
+</code></pre>
 
 9) Create a variable with a DTDevice object:
-
+<pre><code>
 let scanner : DTDevices = DTDevices()
+</code></pre>
 
 10) Modify your viewDidLoad function:
-
+<pre></code>
 override func viewDidLoad() {
-
-self.scanner.delegate = self
-
-self.scanner.connect()
-
-super.viewDidLoad()
-
+ self.scanner.delegate = self
+ self.scanner.connect()
+ super.viewDidLoad()
 }
+</code></pre>
 
 11) Run and try to use it now... You will need to code the rest of your app, but the base is already set.
 
