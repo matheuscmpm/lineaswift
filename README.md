@@ -13,8 +13,8 @@ First steps:
 
 3) If you are using the Xcode5 SDK package from Linea, you need to open DTDevices.h and paste these two following lines on top of it. Ignore this step if you are using Xcode6 SDK package.
 <pre><code>
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
+#import &lt;UIKit/UIKit.h&gt;
+#import &lt;Foundation/Foundation.h&gt;
 </code></pre>
 
 4) Go to your project settings -> General tab -> Scroll to Linked Frameworks and Libraries and click to add another one. Select ExternalAccessory.framework and add it to your project.
