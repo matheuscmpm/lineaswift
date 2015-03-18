@@ -13,9 +13,9 @@ First steps:
 
 3) If you are using the Xcode5 SDK package from Linea, you need to open DTDevices.h and paste these two following lines on top of it. Ignore this step if you are using Xcode6 SDK package.
 
-#import <UIKit/UIKit.h>
+ #import <UIKit/UIKit.h>
 
-#import <Foundation/Foundation.h>
+ #import <Foundation/Foundation.h>
 
 4) Go to your project settings -> General tab -> Scroll to Linked Frameworks and Libraries and click to add another one. Select ExternalAccessory.framework and add it to your project.
 
@@ -51,12 +51,6 @@ super.viewDidLoad()
 
 }
 
-11) Run and try to use it now... You will need to code the rest of your app, but the base is this. 
+11) Run and try to use it now... You will need to code the rest of your app, but the base is already set.
 
-Take a look at this base project that I created to help you guys out with this integration. It is already working, so if you have troubles you can check differences between these two projects, mine and yours. But everything that you need to do is described here… You may have problems with locating DTDevices.h header if you havent copied it to your main project root folder, but as described above, you can fix it setting manually your search paths.
-
-Project git:  https://github.com/matheuscmpm/lineaswift
-
-Regards,
-
-Matheuscmpm
+Git repository:  https://github.com/matheuscmpm/lineaswift
