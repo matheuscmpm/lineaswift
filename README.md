@@ -1,9 +1,7 @@
 # Simple Swift Project Integrated with Linea Pro SDK (DTDevices)
 This project is already set with all the tricks you need to be able to use Swift Language + iOS8 + Linea Pro Objective C SDK. But if you already have a project created, you can follow these instructions below to set your project to do the same: 
 
-Hi @petercosmo, I created this little tutorial to help you guys out using iOS8 + Swift + Linea Pro SDK. In the end of this post you will find a git repository that I also created with a base project with all this settings and codes already in there...
-
-How to make Objective-C Linea Pro SDK works with iOS8 and Swift
+#How to make Objective-C Linea Pro SDK works with iOS8 and Swift
 
 First steps:
 
